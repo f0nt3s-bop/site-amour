@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Est-ce que tu m'aimes ? 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══ ÉCRAN QUESTION ══ -->
+  <div id="screen-question" class="screen active">
+    <div class="hearts-bg" id="hearts-bg"></div>
+
+    <div class="card question-card">
+      <div class="card-emoji">💕</div>
+      <h1 class="main-title">Est-ce que tu m'aimes ?</h1>
+      <p class="subtitle">Réfléchis bien avant de répondre 😏</p>
+
+      <div class="btn-group">
+        <button class="btn btn-oui" id="btn-oui">Oui ❤️</button>
+        <button class="btn btn-non" id="btn-non">Non 😅</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ ÉCRAN OUI ══ -->
+  <div id="screen-oui" class="screen">
+    <div class="hearts-bg" id="hearts-bg-oui"></div>
+
+    <div class="oui-content">
+      <div class="oui-message card">
+        <div class="card-emoji anim-bounce">🥰</div>
+        <h2 class="main-title">Je savais que tu dirais oui ❤️</h2>
+        <p class="subtitle">Tu es la plus belle chose qui me soit arrivée...</p>
+        <p class="subtitle-small">Même le bouton "Non" ne voulait pas être choisi ! 😄</p>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <!-- Photos insérées dynamiquement -->
+      </div>
+
+      <button class="btn btn-retour" id="btn-retour-oui">↩ Revenir au début</button>
+    </div>
+  </div>
+
+  <!-- ══ ÉCRAN NON ══ -->
+  <div id="screen-non" class="screen">
+    <div class="card non-card">
+      <div class="non-photo-wrap">
+        <img id="photo-drole" src="images/drole.svg" alt="Photo drôle" class="photo-drole">
+      </div>
+      <h2 class="main-title non-title">Hmm... on va en reparler 😏</h2>
+      <p class="subtitle">Je vais t'envoyer des mèmes jusqu'à ce que tu changes d'avis ! 😄</p>
+      <p class="subtitle-small">Tu es sûr(e) de ton choix... vraiment sûr(e) ? 🤔</p>
+      <button class="btn btn-oui" id="btn-retry">Réessayer ❤️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
